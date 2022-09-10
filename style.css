@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;500;600;700&display=swap');
 /* font-family: 'Poppins', monospace;*/
 *, *::after, *::before{
     box-sizing: border-box;
@@ -7,12 +7,12 @@
 :root{
     --primary-clr: #22254b;
     --secondary-clr: #373b69;
-
+    --font-main: 'Source Sans Pro', sans-serif;
 }
 body{
     background-color: var(--primary-clr);
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
     
 }
 
@@ -21,7 +21,7 @@ img{
 }
 
 header {
-    padding: 1em;
+    padding: 1em 2em;
     display: flex;
     justify-content: flex-end;
     background-color: var(--secondary-clr);
@@ -46,12 +46,14 @@ header {
 }
 
 main {
+    margin: 1em;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .movie{
-    width: 300px;
+    width: 250px;
     margin: 1em;
     background-color: var(--secondary-clr);
     box-shadow: 0 4px 5px rgba(0,0,0,0,.2);
@@ -107,6 +109,20 @@ main {
 }
 
 .home{
-    text-decoration: none;
     cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--secondary-clr);
+    background-color: var(--primary-clr);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .5em 1em;
+    color: #fff;
+    margin-right: 2em;
+    transition: background-color .3s ease-in-out;
+}
+
+.home:hover{
+    border: 2px solid var(--primary-clr);
+    background-color: var(--secondary-clr);
 }

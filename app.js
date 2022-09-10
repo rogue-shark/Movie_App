@@ -34,18 +34,15 @@ function showMovies(movies) {
         const movieElement = document.createElement('div')
         movieElement.classList.add('movie')
 
-        movieElement.innerHTML = `<div class="movie">
-        <img
-          src="${img_url + poster_path}"
-        />
+        movieElement.innerHTML = `<img
+          src="${img_url + poster_path}" alt"${title}"/>
         <div class="movie-info">
           <h3>${title}</h3>
           <span class="${displayRatingColor(vote_average)}">${vote_average}</span>
         </div>
         <div class="summary">
           <h3>${overview}</h3>
-        </div>
-      </div>`
+        </div>`
 
       main.appendChild(movieElement)
     });
