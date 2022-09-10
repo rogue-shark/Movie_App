@@ -105,3 +105,8 @@ main {
 .movie:hover .summary{
     transform: translateY(0);
 }
+
+.home{
+    text-decoration: none;
+    cursor: pointer;
+}
